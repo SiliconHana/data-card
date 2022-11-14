@@ -1,18 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600&display=swap');
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: rgb(255, 255, 255);
 }
 
 .main-card {
-    padding-top: 2.6em;
-    width: 75%;
-    height: 290px;
-    display: flex;
-    margin: 0%;
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 12px;
 }
 
 .card-title {
@@ -20,7 +15,6 @@ body {
     font-weight: 600;
     color: #303235;
     display: flex;
-    margin: 0%;
     justify-content: center;
 }
 
@@ -47,7 +41,7 @@ body {
 }
 
 .data {
-    font-size: 133.3px;
+    font-size: 11em;
     font-weight: 200;
     letter-spacing: 5px;
 }
@@ -55,4 +49,34 @@ body {
 .title {
     font-size: 2em;
     font-weight: 500;
+}
+
+@media only screen and (max-width: 1060px) {
+    body {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 845px) {
+    body {
+        font-size: 0.6em;
+    }
+    .data {
+        font-size: 9em
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    body {
+        font-size: 0.6em;
+    }
+    .stats {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .card-title {
+        text-align: center;
+    }
 }
